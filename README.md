@@ -1,34 +1,34 @@
 # Authentication-Testing-and-Web-Security-Practice
-Project Overview
+## Project Overview
 
 This repository documents my practical learning journey in authentication testing and web application security. The objective of this practice was to understand how modern authentication systems work, how login requests are transmitted, how sessions are managed, and how security testing tools can be used to analyze web traffic safely in authorized lab environments.
 
 The practice was conducted using legal training environments and educational platforms designed for cybersecurity learning.
 
-##Learning Objectives
+## Learning Objectives
 
 During this practice, I focused on understanding:
 
-HTTP requests and responses
-Authentication workflows
-Session handling
-Cookies and tokens
-Browser developer tools
-Request interception and analysis
-API request structures
-Secure authentication mechanisms
-Lab Environment
-Operating System
-Kali Linux
-Tools Used
-Browser Developer Tools
-Burp Suite Community Edition
-Firefox / Google Chrome
-Practice Platforms
-PortSwigger Web Security Academy
-TryHackMe
-Authentication Testing Activities Performed
-#1. Network Traffic Observation
+-HTTP requests and responses
+-Authentication workflows
+-Session handling
+-Cookies and tokens
+-Browser developer tools
+-Request interception and analysis
+-API request structures
+-Secure authentication mechanisms
+-Lab Environment
+-Operating System
+-Kali Linux
+# Tools Used
+-Browser Developer Tools
+-Burp Suite Community Edition
+-Firefox / Google Chrome
+# Practice Platforms
+-PortSwigger Web Security Academy
+-TryHackMe
+## Authentication Testing Activities Performed
+# 1. Network Traffic Observation
 Activities
 Opened browser Developer Tools
 Used the Network tab to inspect requests
@@ -44,7 +44,7 @@ Request methods (POST/GET)
 Response status codes
 Request headers
 Response headers
-#2. Authentication Request Analysis
+# 2. Authentication Request Analysis
 Activities
 Observed login requests during authentication
 Analyzed request payloads
@@ -52,9 +52,9 @@ Identified JSON request structures
 Examined authentication endpoints
 Captured Information
 
-#Examples of data identified:
+# Examples of data identified:
 
-POST authentication requests
+`POST` authentication requests
 API endpoints
 JSON payload structures
 Content-Type headers
@@ -62,11 +62,12 @@ Authentication responses
 Example Observations
 POST /login HTTP/1.1
 Content-Type: application/json
-##{
+```{
   "username":"test",
   "password":"example"
-}##
-#3. Cookie and Session Analysis
+}```
+
+# 3. Cookie and Session Analysis
 Activities
 Investigated session management behavior
 Explored browser cookie storage
@@ -83,7 +84,7 @@ Secure and HttpOnly flags
 Session persistence behavior
 Example
 Set-Cookie: sessionid=abc123; HttpOnly; Secure
-#4. Request and Response Inspection
+# 4. Request and Response Inspection
 Activities
 Inspected response headers
 Examined status codes
@@ -145,7 +146,7 @@ Practical Outcomes
 
 #By the end of this practice, I was able to:
 
-##Identify authentication-related HTTP requests
+## Identify authentication-related HTTP requests
 Understand how login data is transmitted
 Inspect cookies and session behavior
 Analyze API request structures
